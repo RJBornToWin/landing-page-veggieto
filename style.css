@@ -19,12 +19,33 @@ body {
     float: right;
 }
 
+.center-align {
+    text-align: center;
+}
+
 /* header */
 
 header {
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 0px 250px;
+}
+
+/* header navigation */
+
+.navbar {
+    display: flex;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+}
+
+.logo h3{
+    flex: 1;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 ul {
@@ -42,21 +63,6 @@ a {
     text-decoration: none;
 }
 
-.navbar {
-    display: flex;
-}
-
-.logo{
-    flex: 1;
-    align-items: center;
-}
-
-.logo h3{
-    flex: 1;
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
 /* Header information section */
 
 .info-container {
@@ -66,22 +72,12 @@ a {
     height: 225px;
 }
 
-.info-item-2 img{
-    width:100%;
-    max-height:100%;
-    object-fit: cover;
-}
-
 .info-item-1 {
    flex: 1;
    display: flex;
    flex-direction: column;
    margin: 0;
    gap: 10px;
-}
-
-.info-item-2 {
-    flex: 1; 
 }
 
 .info-item-1 h1{
@@ -99,13 +95,14 @@ a {
     height: 30px;
 }
 
-.left {
-    display: inline-block;
-    width: 85%;
+.info-item-2 {
+    flex: 1; 
 }
 
-.sign-up.right {
-    border: 1px solid #F9FAF8;
+.info-item-2 img{
+    width:100%;
+    max-height:100%;
+    object-fit: cover;
 }
 
 /* details */
@@ -122,19 +119,12 @@ a {
     color: #1F2937;
 }
 
-.details-image {
-    padding: 20px;
-    width: 50px;
-    height: 50px;
-    object-fit:cover;
-}
-
 .details-flex-container {
     display: flex;
     justify-content: center;
 }
 
-figure {
+.details-flex-container figure {
     width: 150px;
     height: 150px;
     border:1px solid #3882F6;
@@ -142,18 +132,11 @@ figure {
     text-align: center;
 }
 
-.img1::after {
-    color: #1F2937;
-    content: 'Cost as low as 3 dollars per meal';
-}
-.img2::after {
-    content: 'Cost as low as 3 dollars per meal';
-}
-.img3::after {
-    content: 'Cost as low as 3 dollars per meal';
-}
-.img4::after {
-    content: 'Cost as low as 3 dollars per meal';
+.details-image {
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    object-fit:cover;
 }
 
 /* Testimonials section */
@@ -165,6 +148,7 @@ figure {
     font-style: italic;
     font-size: large;
     overflow: hidden;
+    border: 1px solid black;
 }
 
 /* Signup reminder section */
@@ -175,6 +159,15 @@ figure {
     border-radius: 5px;
     padding: 30px;
     margin: 30px 330px;
+}
+
+.left {
+    display: inline-block;
+    width: 85%;
+}
+
+.sign-up.right {
+    border: 1px solid #F9FAF8;
 }
 
 /* Footer section */
