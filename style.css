@@ -35,27 +35,22 @@ header {
 
 .navbar {
     display: flex;
-}
-
-.logo{
-    flex: 1;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .logo h3{
-    flex: 1;
     font-size: 24px;
     color: #F9FAF8;
 }
 
-ul {
+.nav-links {
     list-style-type: none;
     display: flex;
-    gap: 20px;
-}
-
-ul > li {
-    align-items: center; 
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    align-items: center;
 }
 
 a {
@@ -67,17 +62,29 @@ a {
 
 .info-container {
     display: flex;
-    padding-bottom: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
     gap: 20px;
-    height: 225px;
+    height: 200px;
 }
 
-.info-item-1 {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   margin: 0;
-   gap: 10px;
+.info-item-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.info-item-right {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.info-item-right img{
+    width: 100%;
+    height: 100%;
 }
 
 .info-item-1 h1{
@@ -95,13 +102,9 @@ a {
     height: 30px;
 }
 
-.info-item-2 {
-    flex: 1; 
-}
-
 .info-item-2 img{
     width:100%;
-    max-height:100%;
+    height: 225px;
     object-fit: cover;
 }
 
@@ -121,6 +124,7 @@ a {
 
 .details-flex-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -182,3 +186,22 @@ a {
     bottom: 0;
     width: 100%; */
 }
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0px 10px;
+    }
+    .info-container {
+        max-height: unset;
+    }
+    .details {
+        padding: 0px 10px 20px;
+    }
+    .testimonials {
+        padding: 10px;
+    }
+    .signup-reminder {
+        padding: 10px;
+        margin: 10px;
+    }
+  }
